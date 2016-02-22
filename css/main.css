@@ -1,0 +1,29 @@
+header {
+    background-color:purple;
+    color:white;
+    text-align:center;
+    padding:0px;
+}
+img {
+	height: 200px;
+}
+body {
+    background: silver;
+}
+#main{
+    background: white;
+}
+footer{
+    background: purple;
+}
+.PaymentTypePhoto{
+    height:30px;
+}
+.Submit{
+    color:white;
+    background-color: purple;
+    margin-bottom: 50px;
+}
+#PaymentInformation #DeliveryInformation{
+    float:both;
+}

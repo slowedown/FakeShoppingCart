@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Practice Website</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <header>  
+    <div id="header" class="container"> 
+        <img src="images/CasualGamingClubShoppingCartlogo.png" class="logo"> 
+    </div>
+  </header>
+  <div id="main">
+    <div class="container">
+      <div id="merchandise" class="row">
+       <div class="CGCMerchandise">
+          <h1>Shopping Cart</h1>
+          <h2>CGC Merchandise</h2>
+          <ul>
+            <ul>Baseball Cap $10 <input type="number" name="quantity" min="0" max="100" value="0"><br></ul>
+            <ul>Wristband $5 <input type="number" name="quantity" min="0" max="100" value="0"><br></ul>
+            <ul>Belt $8 <input type="number" name="quantity" min="0" max="100" value="0"><br></ul>
+            <ul>Keychain $4 <input type="number" name="quantity" min="0" max="100" value="0"><br><hr /></ul>
+            Total:<br>
+          </ul>
+        </div><br>
+      </div>
+      <div class="row">
+        <div id="deliveryInformation" class="six columns">
+          <div class="DeliveryInformation">
+              <h2>Address</h2><hr />
+                <input type="text" name="firstname" placeholder="First Name">
+                <input type="text" name="lastname" placeholder="Last Name"><br>
+                <input type="text" name="address" placeholder="Address"><br>
+                <input type="text" name="city" placeholder="City"> <input type="text" name="state" placeholder="State"> <br>
+                <input type="text" name="Zipcode" placeholder="Zip/Postal Code">  <input type="text" name="country" placeholder="Country"><br />
+                <input type="checkbox" name="DifferentBillingAddress" placeholder="DifferentBillingAddress">CHECK HERE if Billing Address is different from  Shipping Address
+          </div>
+        </div>
+        <div id="PaymentInformation" class="six columns">
+          <div class="PaymentInformation">
+            <h2>Payment Options</h2><hr />
+            <div class="CreditCard">
+              <img src="images/paymenttype.jpg" class="PaymentTypePhoto">
+              <input type="radio" name="payment" class="CreditCardButton"><label for="CreditCardButton">Credit Card</label>
+              <input type="text"  class="hidden" name="cardname" placeholder="Name On Credit Card">
+              <input type="text"  class="hidden" name="creditcardnumber" placeholder="Credit Card Number">
+              <input type="text"  class="hidden" name="expirationmonth" placeholder="Month">
+              <input type="text" class="hidden" name="expirationyear" placeholder="Year">
+              <input type="text"  class="hidden" name="securitycode" placeholder="Security Code">
+            </div>
+            <div class="PayPal">        
+              <input type="radio" name="payment" id="PayPalButton"><label for="PayPalButton">PayPal</label>
+              <div id="PayPalAgreement" class="hidden">
+                After submitting your order, you will be redirected to the PayPal website where you can make your payment. Once your payment has been successfully completed and confirmed by PayPal, delivery of the ordered products will be initiated.
+                Activate the PayPal Billing Agreement
+                <input type="checkbox" name="PayPalAgreement" value="PayPalAgreement">I hereby authorize Casual Gaming Club to collect payments quickly and conveniently using my PayPal account.
+              </div>
+            </div>
+            <div>
+              <input type="submit" class="Submit" value="Buy Now">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+  <div id="footer" class="container">
+        <h4>Each item ships between 5 to 7 business days by USPS in the US. 10 to 14 days internationally.</h4>
+        <a href="" target="_new">Terms & Conditions</a>   <a href="" target="_new">Contact</a>   <a href="" target="_new">Refund Policy</a>  <a href="" target="_new">Security</a>  <a href="" target="_new">Legal Info</a> <a href="" target="_new">Privacy Policy</a>
+  </div>
+  </footer>
+</body>
+</html>
